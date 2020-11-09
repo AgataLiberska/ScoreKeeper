@@ -8,13 +8,13 @@
 </head>
 <body>
     <h1>Ping Pong Score Keeper</h1>
-    <h2><span id="scoreOne">0</span> to <span id="scoreTwo">0</span></h2>
+    <h1><span id="playerOneScore">0</span> to <span id="playerTwoScore">0</span></h1>
     <p>Use the button below to keep score</p>
     <form>
         <label for="targetScore">
             Playing To
         </label>
-        <select>
+        <select id="targetScore" name="targetScore">
             <option value=3>3</option>
             <option value=4>4</option>
             <option value=5>5</option>
@@ -25,9 +25,9 @@
             <option value=10>10</option>
         </select>
     </form>
-    <button name="playerOnePoint">+1 Player One</button>
-    <button name="playerTwoPoint">+1 Player Two</button>
-    <button name="reset">Reset</button>
+    <button id="playerOnePoint">+1 Player One</button>
+    <button id="playerTwoPoint">+1 Player Two</button>
+    <button id="reset">Reset</button>
     <script src="app.js"></script>
 </body>
 </html>
