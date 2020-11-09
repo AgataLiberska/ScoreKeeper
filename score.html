@@ -7,7 +7,27 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-
+    <h1>Ping Pong Score Keeper</h1>
+    <h2><span id="scoreOne">0</span> to <span id="scoreTwo">0</span></h2>
+    <p>Use the button below to keep score</p>
+    <form>
+        <label for="targetScore">
+            Playing To
+        </label>
+        <select>
+            <option value=3>3</option>
+            <option value=4>4</option>
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+            <option value=10>10</option>
+        </select>
+    </form>
+    <button name="playerOnePoint">+1 Player One</button>
+    <button name="playerTwoPoint">+1 Player Two</button>
+    <button name="reset">Reset</button>
     <script src="app.js"></script>
 </body>
 </html>
