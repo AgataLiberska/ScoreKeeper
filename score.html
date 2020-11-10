@@ -4,30 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Score Keeper</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
 </head>
 <body>
-    <h1>Ping Pong Score Keeper</h1>
-    <h1><span id="playerOneScore">0</span> to <span id="playerTwoScore">0</span></h1>
-    <p>Use the button below to keep score</p>
-    <form>
-        <label for="targetScore">
-            Playing To
-        </label>
-        <select id="targetScore" name="targetScore">
-            <option value=3>3</option>
-            <option value=4>4</option>
-            <option value=5>5</option>
-            <option value=6>6</option>
-            <option value=7>7</option>
-            <option value=8>8</option>
-            <option value=9>9</option>
-            <option value=10>10</option>
-        </select>
-    </form>
-    <button id="playerOnePoint">+1 Player One</button>
-    <button id="playerTwoPoint">+1 Player Two</button>
-    <button id="reset">Reset</button>
+    <section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <header class="card-header">
+                        <p class="card-header-title">
+                        Ping Pong Score Keeper
+                        </p>
+                    </header>
+                    <div class="card-content">
+                        <div class="content">
+                            <h1 class="title is-1"><span id="playerOneScore">0</span> to <span id="playerTwoScore">0</span></h1>
+                            <p class="Subtitle">Use the button below to keep score</p>
+                            <label class="label is-large is-inline" for="targetScore">
+                                    Playing To
+                            </label>
+                            <div class="select is-rounded">
+                                <select id="targetScore" name="targetScore">
+                                    <option value=3>3</option>
+                                    <option value=4>4</option>
+                                    <option value=5>5</option>
+                                    <option value=6>6</option>
+                                    <option value=7>7</option>
+                                    <option value=8>8</option>
+                                    <option value=9>9</option>
+                                    <option value=10>10</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button id="playerOnePoint" class="card-footer-item button is-primary">+1 Player One</button>
+                        <button id="playerTwoPoint" class="card-footer-item button is-info">+1 Player Two</button>
+                        <button id="reset" class="card-footer-item button is-danger">Reset</button>
+                    </footer>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </section>
     <script src="app.js"></script>
 </body>
 </html>
