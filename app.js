@@ -20,6 +20,8 @@ playerOneButton.addEventListener('click', function() {
             isGameOver = true;
             playerOneScore.classList.add('has-text-success');
             playerTwoScore.classList.add('has-text-danger');
+            playerOneButton.disabled = true;
+            playerTwoButton.disabled = true;
         }
         playerOneScore.textContent = score1;
     }
@@ -34,6 +36,8 @@ playerTwoButton.addEventListener('click', function() {
             isGameOver = true;
             playerTwoScore.classList.add('has-text-success');
             playerOneScore.classList.add('has-text-danger');
+            playerOneButton.disabled = true;
+            playerTwoButton.disabled = true;
         }
         playerTwoScore.textContent = score2;
     }
@@ -56,4 +60,6 @@ function reset() {
     playerTwoScore.textContent = score2;
     playerOneScore.classList.remove('has-text-success', 'has-text-danger');
     playerTwoScore.classList.remove('has-text-success', 'has-text-danger');
+    playerOneButton.disabled = false;
+    playerTwoButton.disabled = false;
 }
